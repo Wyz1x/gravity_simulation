@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Simple Slingshot Gravitation Simulation ig lol</title>
+</head>
+<body>
+    <div class="mouse-effect" id="mouse-effect"></div>
+    <div class="orbit-line orbit-line-two"></div>
+
+    <section class="greetings" id="greetings">
+        <div class="greetings_main">
+            <div class="greetings_text">
+                <h1 class="greetings_h1">Gravity Simulation</h1>
+                <p class="greetings_p">
+                    Создать полноценную гравитационную симуляцию в 3D — задача непростая, поэтому я сделал лёгкую, но наглядную 2D-симуляцию. В ней есть полностью настраиваемые объекты: масса, размер, скорость, направление — всё регулируется. Объекты можно запускать в «космос» как из рогатки и наблюдать, как они взаимодействуют под действием гравитации.
+                    Проект написан на Python
+                </p>
+            </div>
+            <div class="greetings_images">
+                <img src="./Images/GSMexample1.png" alt="" class="greetings_img">
+            </div>
+        </div>
+        <a href="#Showcase_orbit" class="sD">
+            <button class="slideDown">Next</button>
+        </a>
+    </section>
+
+
+
+    <section class="Showcase" id="Showcase_orbit">
+        <a href="#greetings" class="sU">
+            <button class="slideUp">Previous</button>
+        </a>
+        <div class="Showcase_main">
+            <div class="orbit-line orbit-line-one"></div>
+            <div class="Showcase_orbit_div">
+                <div class="Showcase_text">
+                    <h1 class="Showcase_h1">Визуализация стабильной орбиты.</h1>
+                    <p class="Showcase_p">Наглядная демонстрация гравитационного притяжения, реализованная на Python. Центральная масса и ее спутник с отображением ключевых физических параметров.</p>
+                </div>
+                <div class="Showcase_videos">
+                    <video class="orbit_video" src="./videos/GSMorbit.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+        </div>
+        <a href="#Showcase_collide" class="sD">
+            <button class="slideDown">Next</button>
+        </a>
+    </section>
+
+    <section class="Showcase Showcase_colide" id="Showcase_collide">
+        <a href="#Showcase_orbit" class="sU">
+            <button class="slideUp">Previous</button>
+        </a>
+        <div class="Showcase_main Showcase_colide_main">
+            <div class="orbit-line orbit-line-three"></div>
+            <div class="Showcase_orbit_div">
+                <div class="Showcase_videos_collide">
+                    <video class="orbit_video" src="./videos/GSMcollide.mp4" autoplay loop muted></video>
+                </div>
+                <div class="Showcase_text">
+                    <h1 class="Showcase_h1">Слияние объектов.</h1>
+                    <p class="Showcase_p">При столкновении меньший объект добавляет свою массу к общему объекту, что отражает закон сохранения массы в системе.</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#instruction" class="sD">
+            <button class="slideDown">Next</button>
+        </a>
+    </section>
+
+    <section class="instruction" id="instruction">
+        <a href="#Showcase_collide" class="sU">
+            <button class="slideUp">Previous</button>
+        </a>
+        <div class="instruction_main">
+            <h1 class="instruction_main_h1">Как пользоваться программой?</h1>
+            <div class="instruction_div instruction_object">
+                <div class="instruction_text">
+                    <h1 class="instruction_h1">Создание объектов</h1>
+                    <p class="instruction_p">
+                        Нажмите клавишу <b>1</b>, чтобы создать первый объект, и клавишу <b>2</b>, чтобы создать второй объект.
+                    </p>
+                </div>
+                <div class="instruction_videos">
+                    <video class="instruction_video" src="./videos/creategms.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div class="instruction_div instruction_delete">
+                <div class="instruction_text">
+                    <h1 class="instruction_h1">Удаление объектов</h1>
+                    <p class="instruction_p">
+                        Нажмите клавишу <b>Backspace</b>, чтобы удалить все созданные объекты.
+                    </p>
+                </div>
+                <div class="instruction_videos">
+                    <video class="instruction_video" src="./videos/backspasegms.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
