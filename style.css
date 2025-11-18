@@ -8,7 +8,7 @@
 
 body{
     font-family: "Montserrat", sans-serif;
-    background: url("./Images/SpacePerfectNoise.png") repeat;
+    background: url("./images/SpacePerfectNoise.png") repeat;
     animation: space-move 120s linear infinite;    
     color: #fff;
     overflow: hidden;
@@ -368,4 +368,5 @@ body{
 .instruction_video{
     width: 100%;
     border-radius: 10px;
+
 }
